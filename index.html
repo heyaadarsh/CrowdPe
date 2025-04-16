@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crowdfunding Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>📢 Create Your Campaign</h1>
+  
+    <div class="container">
+      <form id="campaignForm">
+        <input type="text" id="title" placeholder="Campaign Title" required>
+        <textarea id="description" placeholder="Description" required></textarea>
+        <input type="number" id="goal" placeholder="Funding Goal (₹)" required>
+        <input type="file" id="imageUpload" accept="image/*">
+      </form>
+  
+      <div class="preview-card">
+        <h2 id="previewTitle">Your Campaign Title</h2>
+        <p id="previewDescription">Campaign description will appear here.</p>
+        <p id="previewGoal">Goal: ₹0</p>
+        <img id="previewImage" src="" alt="Preview Image" style="display:none;">
+      </div>
+    </div>
+  
+    <script src="firebase.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+  </body>
+  
+</html>
